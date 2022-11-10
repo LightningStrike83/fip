@@ -47,8 +47,8 @@ header nav ul li a:visited {
 
 .soc_med {
     text-align: right;
-    margin-right: 30px;
     position: relative;
+    bottom: 18.5px;
 }
 
 /* IDs Start Here */
@@ -62,8 +62,7 @@ header nav ul li a:visited {
 }
 
 #read_more {
-    border: solid;
-    border-color: black;
+    border: 2px solid pink;
     border-radius: 5px;
     width: 120px;
     height: 50px;
@@ -75,6 +74,11 @@ header nav ul li a:visited {
 
 #read_more a {
     text-decoration: none;
+    color: black;
+}
+
+#read_more a:hover {
+    text-decoration: underline;
 }
 
 #read_more a:visited {
