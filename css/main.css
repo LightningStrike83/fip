@@ -1,0 +1,65 @@
+/* Key Codes For Me */
+/*border: 1px solid black; */
+
+/* Selectors Start Here */
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+header {
+    padding-top: 15px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(157, 255, 255);
+    
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Classes Start Here */
+.hidden {display: none;}
+
+.soc_med {
+    text-align: right;
+    margin-right: 30px;
+    position: relative;
+}
+
+/* IDs Start Here */
+#top_nav, #bottom_nav {
+    text-align: center;
+}
+
+#wrapper {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+#read_more {
+    border: solid;
+    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    border-color: black;
+    background-color: white;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+}
