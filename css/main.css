@@ -19,6 +19,10 @@ body {
     
 }
 
+hr {
+    color: red;
+}
+
 ul li {
     list-style: none;
     display: inline-block;
@@ -27,10 +31,15 @@ ul li {
 
 ul li a {
     text-decoration: none;
+    color: pink;
 }
 
 header nav ul li a:hover {
     text-decoration: underline;
+}
+
+header nav ul li a:visited {
+    color: rgb(203, 203, 203);
 }
 
 /* Classes Start Here */
@@ -54,12 +63,21 @@ header nav ul li a:hover {
 
 #read_more {
     border: solid;
+    border-color: black;
     border-radius: 5px;
     width: 120px;
     height: 50px;
-    border-color: black;
     background-color: white;
     text-align: center;
     padding: 13px;
     text-decoration: none;
+}
+
+#read_more a {
+    text-decoration: none;
+}
+
+#read_more a:visited {
+    text-decoration: none;
+    color: orange;
 }
