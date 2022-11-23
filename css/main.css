@@ -67,7 +67,7 @@ a {
 
 .active.active {
 	padding-bottom: 8px;
-	border-bottom: solid #fbfbfb 3px;
+	border-bottom: solid #f2f212 3px;
  }
 
 #youtube {
@@ -86,12 +86,16 @@ ul li a {
 	color: orange;
 }
 
-ul li a:hover {
+ul li:not(.active) a:hover {
 	text-decoration: underline;
 }
 
 ul li a:visited {
 	color: none;
+}
+
+a:visited {
+	color: orange;
 }
 
 
@@ -124,19 +128,29 @@ you work on and the intended audience */
 
 #header-box1 {
 	grid-column: 1/3;
-	/* Remove as content will dictate height */
 	height: 80px;
 }
 
 #main-nav {
 	grid-column: 3/11;
-	/* Remove as content will dictate height */
 	height: 80px;
+	justify-content: center;
+	align-items: center;
+	display: inline-flex;
 }
+
+ul {
+	padding: 0;
+}
+
+ul li:first-of-type:not(#contact_list li) {
+	margin-left: 0;
+}
+
+
 
 #header-box2 {
 	grid-column: 11/-1;
-	/* Remove as content will dictate height */
 	height: 80px;
 }
 
@@ -148,7 +162,6 @@ you work on and the intended audience */
 
 #hero-text {
 	grid-column: 1/8;
-	/* Remove as content will dictate height */
 	height: 582px;
 	font-size: 28px;
 }
@@ -163,7 +176,6 @@ you work on and the intended audience */
 
 #hero-image {
 	grid-column: 8/-1;
-	/* Remove as content will dictate height */
 	height: 582px;
 }
 
@@ -175,26 +187,23 @@ you work on and the intended audience */
 #previous h2 {
 	grid-column: 1/-1;
 	text-align: center;
-	font-size: 48px;
+	font-size: 40px;
 }
 
 #peach_cos {
 	grid-column: 1/5;
-	/* Remove as content will dictate height */
 	height: 507px;
 	text-align: center;
 }
 
 #serena_lillie {
 	grid-column: 5/9;
-	/* Remove as content will dictate height */
 	height: 507px;
 	text-align: center;
 }
 
-#kiripool {
+#kiripool_home {
 	grid-column: 9/-1;
-	/* Remove as content will dictate height */
 	height: 507px;
 	text-align: center;
 }
@@ -206,28 +215,36 @@ you work on and the intended audience */
 }
 
 #peach_cos p {
-	font-size: 28px;
+	font-size: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
-
 
 #serena_lillie h5 {
 	font-size: 40px;
-	margin: 3px;
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 3px;
 	padding-bottom: 20px;
 }
 
 #serena_lillie p {
-	font-size: 28px;
+	font-size: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-#kiripool h5 {
+#kiripool_home h5 {
 	font-size: 40px;
 	margin: 1px;
-	padding-bottom: 5px;
+	padding-bottom: 20px;
 }
 
-#kiripool p {
-	font-size: 28px;
+#kiripool_home p {
+	font-size: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .product-box {
@@ -242,17 +259,27 @@ you work on and the intended audience */
 
 #about-title {
 	text-align: center;
+	font-size: 40px;
 }
 
 #about-text {
 	grid-column: 1/8;
-	/* Remove as content will dictate height */
 	height: 700px;
+	font-size: 28px;
+}
+
+#about-text h5 {
+	font-size: 40px;
+	text-align: left;
+}
+
+#about-text p {
+	padding-top: 30px;
+	margin-right: 50px;
 }
 
 #about-image {
 	grid-column: 8/-1;
-	/* Remove as content will dictate height */
 	height: 700px;
 }
 
@@ -265,9 +292,14 @@ you work on and the intended audience */
 	grid-column: 1/8;
 	/* Remove as content will dictate height */
 	height: 700px;
-	text-align: center;
+	text-align: left;
 	color: orange;
 	font-size: 28px;
+}
+
+#contact-text p {
+	padding-left: 85px;
+	padding-top: 40px;
 }
 
 #free {
@@ -290,6 +322,14 @@ you work on and the intended audience */
 	padding-bottom: 20px;
 }
 
+#contact_list ul li {
+	margin-left: 70px;
+}
+
+#contact_list { 
+	padding-left: 1.5em !important; 
+}
+
 /*Common page elements  */
 
 #footer-con {
@@ -309,6 +349,15 @@ you work on and the intended audience */
 	/* Remove as content will dictate height */
 	height: 80px;
 	margin-bottom: 100px;
+}
+
+#footer-nav li {
+	padding-top: 10px;
+	padding-left: 50px;
+}
+
+#footer-nav li:first-of-type {
+	padding: 0;
 }
 
 #footer-newsletter1 {
@@ -339,6 +388,11 @@ you work on and the intended audience */
 	height: 580px;
 }
 
+#gallery h2 {
+	font-size: 40px;
+	padding: 30px;
+}
+
 #gallery-text {
 	grid-column: 1/9;
 	/* Remove as content will dictate height */
@@ -354,6 +408,17 @@ you work on and the intended audience */
 	align-items: center;
 }
 
+#welcome {
+	font-size: 48px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+#welcome-text {
+	font-size: 42px;
+	text-align: left;
+}
+
 .dot {
 	background-color: #dddddd;
 	height: 30px;
@@ -367,10 +432,51 @@ you work on and the intended audience */
 	text-align: center;
   }
 
+#just_monika {
+	text-align: center;
+	font-size: 30px;
+	margin-left: 75px;
+	margin-right: 75px;
+	padding-top: 20px;
+}
+
 .gallery-box {
 	background-color: #ddd;
 	grid-column: span 4 / span 4;
 	/* Remove as content will dictate height */
 	height: 507px;
 	margin-bottom: 20px;
+	position: relative;
+}
+
+.character_name {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+.gallery_text {
+	text-align: center;
+	font-size: 30px;
+	margin-left: 55px;
+	margin-right: 55px;
+	padding-top: 20px;
+}
+
+.gallery_text2 {
+	text-align: center;
+	font-size: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 20px;
+}
+
+.source {
+	text-align: center;
+	font-size: 24px;
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	right: 0;
 }
