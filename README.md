@@ -10,6 +10,7 @@ History
 11/14/22- Added created files to github, made changes to provided templates based on info produced
 11/17/22- Made changes according to professor's instruction
 11/23/22- Built out the index and gallery in class thanks to Professor van Rhys's help
+11/25/22- Made changes to mobile pages, added in fonts for all pages
 
 Credits
 Chi- Advisor, Motivator
