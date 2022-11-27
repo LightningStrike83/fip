@@ -11,6 +11,7 @@ History
 11/17/22- Made changes according to professor's instruction
 11/23/22- Built out the index and gallery in class thanks to Professor van Rhys's help
 11/25/22- Made changes to mobile pages, added in fonts for all pages
+11/26/22- Created lightboxes, added in contact forms, added links, some other small tweaks
 
 Credits
 Chi- Advisor, Motivator
