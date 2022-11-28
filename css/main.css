@@ -132,6 +132,10 @@ you work on and the intended audience */
 	height: 80px;
 }
 
+.main-logo {
+	height: 75px;
+}
+
 #main-nav {
 	grid-column: 3/11;
 	height: 80px;
