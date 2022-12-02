@@ -15,7 +15,7 @@ History
 11/27/22- Added preliminary info for logo for website (placing/sizing/etc.)
 11/29/22- Added pictures to folders; to add to wireframe
 11/30/22- Added pictures to code, added some enhanced pictures to folders, some CSS cleanup
-12/1/22- Added pictures to lightboxes, stylized index and mobile
+12/1/22- Added pictures to lightboxes, stylized index and mobile, updated assets like wireframe and logos
 
 Credits
 Chi- Advisor, Motivator
