@@ -198,24 +198,25 @@ ul li:first-of-type:not(#contact_list li) {
 #peach_cos {
 	grid-column: 1/5;
 	height: 507px;
-	text-align: center;
+	text-align: left;
 }
 
 #serena_lillie {
 	grid-column: 5/9;
 	height: 507px;
-	text-align: center;
+	text-align: left;
 }
 
 #kiripool_home {
 	grid-column: 9/-1;
 	height: 507px;
-	text-align: center;
+	text-align: left;
 }
 
 #peach_cos h5 {
 	font-size: 40px;
 	margin: 3px;
+	padding-left: 5px;
 	padding-bottom: 20px;
 }
 
@@ -229,7 +230,7 @@ ul li:first-of-type:not(#contact_list li) {
 	font-size: 40px;
 	margin-top: 3px;
 	margin-left: 10px;
-	margin-right: 10px;
+	margin-right: 15px;
 	margin-bottom: 3px;
 	padding-bottom: 20px;
 }
@@ -243,6 +244,7 @@ ul li:first-of-type:not(#contact_list li) {
 #kiripool_home h5 {
 	font-size: 40px;
 	margin: 1px;
+	padding-left: 5px;
 	padding-bottom: 20px;
 }
 
@@ -345,7 +347,7 @@ form {
 form input {
 	width: 500px;
 	height: 50px;
-	text-align: center;
+	text-align: left;
 	font-size: 28px;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -354,13 +356,14 @@ form input {
 form textarea {
 	width: 500px;
 	height: 250px;
-	text-align: center;
+	text-align: left;
 	font-size: 28px;
 }
 
 #submit {
 	width: 100px;
 	height: 50px;
+	text-align: center;
 }
 
 #inquiry {
@@ -406,7 +409,7 @@ form textarea {
 #footer-newsletter1 input {
 	width: 100%;
 	height: 75px;
-	text-align: center;
+	text-align: left;
 	font-size: 28px;
 }
 
@@ -435,6 +438,7 @@ form textarea {
 	top: 0;
 	left: 0;
 	background-color: rgba(0,0,0,0.85);
+	margin:0 auto;
   }
   
   .lb_close {
@@ -451,7 +455,7 @@ form textarea {
   }
 
   .lightbox:target {
-	display: block
+	display: block;
   }
 
   .lightbox p {
@@ -462,7 +466,7 @@ form textarea {
 	margin-right: 150px;
   }
 
-  #lightbox7 p, #lightbox12 p {
+  #lightbox2 p, #lightbox6 p, #lightbox7 p, #lightbox12 p {
 	padding-top: 15px;
   }
 
@@ -474,8 +478,22 @@ form textarea {
 	font-family: Rubik Glitch;
   }
 
+  #lightbox8 p {
+	text-align: left;
+	padding-top: 300px;
+  }
+
+  #lightbox8 .credit {
+	padding-top: 15px;
+  }
+
   #lightbox10 article a:hover {
 	text-decoration: underline;
+  }
+
+  #lightbox10 p {
+	text-align: center;
+	padding-top: 300px;
   }
 
   #lightbox12 article:hover {
@@ -494,6 +512,20 @@ form textarea {
 	width: 60%;
 	margin-left: 21%;
 	padding-top: 30px;
+  }
+
+  #monikalb, #deadpoollb, #lightninglb {
+	height: 50%;
+	width: 50%;
+	margin-left:25%;
+  }
+
+  #peachlb, #rosalinalb {
+	height: 30%;
+	width: 30%;
+	padding-left: 100px;
+	float: left;
+	padding-right: 50px;
   }
 
 
