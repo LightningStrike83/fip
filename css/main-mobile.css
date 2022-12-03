@@ -1,15 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*Remove this rule on your HTML elements as you start to fill them with content*/
-
-.box-color {
-	color: #fff;
-	background: #000;
-	text-align: center;
-	margin: 0;
-}
-
 /*basic reset*/
 
 /*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
@@ -20,7 +11,7 @@ div,p,body,header,footer,section,article,nav {
 }	
 
 img { 
-	border: none; /*Remove border if image is a link*/
+	border: none;
 	margin: 0; 
 	padding: 0; 
 }
@@ -28,9 +19,10 @@ img {
 /*html selectors*/
 
 body {
-	font-family: Constantia, Helvetica, Arial, sans-serif;
+	font-family: Constantia, Arial, sans-serif;
 	font-size: 12px;
 	position: relative;
+	color: #4F4F4F;
 }
 
 /* Remove underlines from links */
@@ -40,7 +32,11 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
 }
 
 /*hide elements from browser but show for doc outline*/
@@ -76,7 +72,7 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-image: linear-gradient(#29EAFF, #AAFFFD);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -87,20 +83,22 @@ you work on and the intended audience, we may go as low as 320px */
 
 #mobile-nav {
 	grid-column: 4/-1;
+	cursor: pointer;
 }
 
 .burger {
-	height: 16px;
-	background-color:#aaa;
+	height: 7px;
+	background-color:#4F4F4F;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	margin-top: 12px;
 }
 
 /* index page */
 
 #hero-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
+	background: url("../images/mobile_index/monika_top_story_m.jpg");
 	height: 800px;
 }
 
@@ -109,6 +107,7 @@ you work on and the intended audience, we may go as low as 320px */
 	/* Remove as content will dictate height */
 	height: 380px;
 	text-align: left;
+	color: #f5f5f5;
 }
 
 #hero-text h5 {
@@ -125,7 +124,7 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #image-slider-con {
-	background-color: #dddddd;
+	background-color: #29EAFF;
 	/* Remove as content will dictate height */
 	height: 740px;
 	position: relative;
@@ -141,9 +140,9 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #image-slider-con h5 {
-	text-align: center;
+	text-align: left;
 	font-size: 40px;
-	padding-left: 30px;
+	padding-left: 10px;
 	padding-right: 30px;
 	margin-top: 10px;
 	margin-bottom: 0;
@@ -163,6 +162,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-size: 120px;
 	color:#fff;
 	top: 200px;
+	cursor: pointer;
 }
 
 #mobile-slider-right {
@@ -171,6 +171,7 @@ you work on and the intended audience, we may go as low as 320px */
 	font-size: 120px;
 	color:#fff;
 	top: 200px;
+	cursor: pointer;
 }
 
 #about-us-con h2 {
@@ -181,7 +182,7 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #about-us-text-con {
-	background-color: #dddddd;
+	background-image: linear-gradient(#AAFFFD, #29EAFF);
 }
 
 #about-us-text {
@@ -207,15 +208,12 @@ you work on and the intended audience, we may go as low as 320px */
 }
 
 #contact-us-con {
-	margin-top: 100px;
-	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 #contact-text {
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 700px;
-	margin-bottom: 30px;
+	height: 750px;
 	text-align: left;
 }
 
@@ -225,6 +223,7 @@ you work on and the intended audience, we may go as low as 320px */
 
 #contact-text p, #contact-text li {
 	font-size: 28px;
+	padding-top: 12px;
 }
 
 #contact-text h5, #contact-text p {
@@ -236,48 +235,52 @@ you work on and the intended audience, we may go as low as 320px */
 #contact-form {
 	grid-column: 1/-1;
 	/* Remove as content will dictate height */
-	height: 580px;
+	height: 689px;
+	width: 428px;
+	text-align: center;
+	display: flex;
 }
 
 form {
-	background-color: orange;
-	width: 388px;
+	background-image: radial-gradient(#AAFFFD,#29EAFF);
+	width: 428px;
+	grid-column: 1/-1;
 }
 
 form input {
-	width: 300px;
-	height: 50px;
+	width: 340px;
+	height: 79px;
 	text-align: left;
 	font-size: 28px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 10px;
+	border: solid 1px #4F4F4F;
 }
 
 form textarea {
-	width: 300px;
+	width: 350px;
 	height: 250px;
 	text-align: left;
 	font-size: 28px;
+	border: solid 1px #4F4F4F;
 }
 
 #submit {
-	width: 100px;
-	height: 50px;
+	width: 184px;
+	height: 45px;
+	color: #4F4F4F;
+	background-color: #f2f212;
+	display: block;
 	text-align: center;
+	margin-left: 37px;
+	border: solid 1px #4F4F4F;
 }
 
 
 /*Common page elements  */
 
 #footer-con_m {
-	margin-top: 130px;
-	height: 410px;
-	background-color: #aaa;
-}
-
-#footer-con_m2 {
-	height: 410px;
-	background-color: #aaa;
+	height: 350px;
+	background-image: linear-gradient(#AAFFFD, #29EAFF);
 }
 
 #footer-box {
@@ -285,15 +288,13 @@ form textarea {
 	/* Remove as content will dictate height */
 	height:45px;
 	grid-column: 1/3;
-	background-color: #ddd;
 }
 
 #footer-newsletter {
-	margin-top: 100px;
+	margin-top: 60px;
 	/* Remove as content will dictate height */
 	height:100px;
 	grid-column: 1/-1;
-	background-color: #ddd;
 }
 
 #footer-newsletter p {
@@ -307,6 +308,14 @@ form textarea {
 	height: 50px;
 	text-align: left;
 	font-size: 28px;
+	border: solid 1px #4F4F4F;
+}
+
+#footer-newsletter2 {
+	margin-top: 20px;
+	height:40px;
+	grid-column: 1/3;
+	background-color: #ddd;
 }
 
 #footer-newsletter2 input {
@@ -314,14 +323,17 @@ form textarea {
 	height: 100%;
 	text-align: center;
 	font-size: 28px;
+	color: #4F4F4F;
+	background-color: #f2f212;
+	border: solid 1px #4F4F4F;
 }
 
 /* gallery page */
 
 #hero-gallery-con {
 	background-color: #aaaaaa;
-	background: url("https://via.placeholder.com/428x458");
-	height: 480px;
+	background: url("../images/mobile_gallery/hero_monika_m.jpg");
+	height: 500px;
 }
 
 #hero-gallery-text h5 {
@@ -344,6 +356,7 @@ form textarea {
 	grid-column: 1/-1;
 	/* Remove as content will dictate height */
 	height: 350px;
+	color: #f5f5f5;
 }
 
 #gallery-controls {
@@ -352,15 +365,16 @@ form textarea {
 	justify-content: center;
 	align-items: center;
 	margin-top: 20px;
-	padding-top: 60px;
+	padding-top: 80px;
 }
 
 .dot {
-	background-color: #dddddd;
+	background-color: #f5f5f5;
 	height: 30px;
 	width: 30px;
 	border-radius: 50%;
 	margin: 5px;
+	cursor: pointer;
   }
 
 #gallery h2 {
@@ -373,18 +387,10 @@ form textarea {
 
 .gallery-box {
 	grid-column: 1/-1;
-	background-color: #ddd;
 	/* Remove as content will dictate height */
 	height: 507px;
 	margin-bottom: 20px;
 	position: relative;
-}
-
-#footer-newsletter2 {
-	margin-top: 20px;
-	height:40px;
-	grid-column: 1/3;
-	background-color: #ddd;
 }
 
 .character_name {
@@ -396,31 +402,15 @@ form textarea {
 
 .gallery_text {
 	text-align: center;
-	font-size: 28px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-top: 13px;
-}
-
-.gallery_text2 {
-	text-align: center;
-	font-size: 28px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-top: 13px;
-}
-
-.gallery_text3 {
-	text-align: center;
 	font-size: 26px;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-top: 13px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 5px;
 }
 
 .source {
 	text-align: center;
-	font-size: 24px;
+	font-size: 20px;
 	position: absolute;
 	bottom: 3px;
 	left: 0;
@@ -431,6 +421,11 @@ form textarea {
 	grid-column: 4/-1;
 	font-size: 28px;
 	padding-bottom: 10px;
+	color: blue;
+}
+
+#more:hover {
+	text-decoration: underline;
 }
 
 .lightbox {

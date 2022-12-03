@@ -40,6 +40,7 @@ body {
 	font-family: Constantia, Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	position: relative;
+	color: #4F4F4F;
 }
 
 /* Remove underlines from links */
@@ -68,7 +69,7 @@ a {
 
 .active.active {
 	padding-bottom: 8px;
-	border-bottom: solid #f2f212 3px;
+	border-bottom: solid #4f4f4f 5px;
  }
 
 #youtube {
@@ -76,15 +77,15 @@ a {
 }
 
 ul li {
-	font-size: 30px;
+	font-size: 40px;
 	justify-content: center;
    	align-items: center;
    	display: inline-flex;
-	margin-left: 70px;
+	margin-left: 60px;
 }
 
 ul li a {
-	color: orange;
+	color: #4f4f4f;
 }
 
 ul li:not(.active) a:hover {
@@ -96,7 +97,7 @@ ul li a:visited {
 }
 
 a:visited {
-	color: orange;
+	color: inherit;
 }
 
 
@@ -122,7 +123,7 @@ you work on and the intended audience */
 }
 
 #header-con {
-	background-color: #ddd;
+	background-image: linear-gradient(#29EAFF, #AAFFFD);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -139,8 +140,6 @@ you work on and the intended audience */
 #main-nav {
 	grid-column: 3/11;
 	height: 80px;
-	justify-content: center;
-	align-items: center;
 	display: inline-flex;
 }
 
@@ -151,8 +150,6 @@ ul {
 ul li:first-of-type:not(#contact_list li) {
 	margin-left: 0;
 }
-
-
 
 #header-box2 {
 	grid-column: 11/-1;
@@ -213,17 +210,17 @@ ul li:first-of-type:not(#contact_list li) {
 	text-align: left;
 }
 
+#peach_cos p, #serena_lillie p, #kiripool_home p {
+	font-size: 24px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 #peach_cos h5 {
 	font-size: 40px;
 	margin: 3px;
 	padding-left: 5px;
 	padding-bottom: 20px;
-}
-
-#peach_cos p {
-	font-size: 24px;
-	margin-left: 10px;
-	margin-right: 10px;
 }
 
 #serena_lillie h5 {
@@ -235,12 +232,6 @@ ul li:first-of-type:not(#contact_list li) {
 	padding-bottom: 20px;
 }
 
-#serena_lillie p {
-	font-size: 24px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
 #kiripool_home h5 {
 	font-size: 40px;
 	margin: 1px;
@@ -248,18 +239,13 @@ ul li:first-of-type:not(#contact_list li) {
 	padding-bottom: 20px;
 }
 
-#kiripool_home p {
-	font-size: 24px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
 .product-box {
-	background-color: #ddd;
+	background-color: #29EAFF;
 }
 
 #about-con {
-	background-color: #ddd;
+	background-color: #29EAFF;
+  	background-image: linear-gradient(to bottom right, #29EAFF, #AAFFFD);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -300,7 +286,6 @@ ul li:first-of-type:not(#contact_list li) {
 	/* Remove as content will dictate height */
 	height: 700px;
 	text-align: left;
-	color: orange;
 	font-size: 28px;
 }
 
@@ -311,7 +296,6 @@ ul li:first-of-type:not(#contact_list li) {
 
 #free {
 	font-size: 48px;
-	color: orange;
 	padding-top: 30px;
 	padding-bottom: 50px;
 }
@@ -340,42 +324,54 @@ ul li:first-of-type:not(#contact_list li) {
 
 form {
 	border: 2px solid;
-	background-color: orange;
-	width: 550px;
+	background-color: #29EAFF;
+	width: 674px;
+	height: 725px;
 }
 
 form input {
-	width: 500px;
-	height: 50px;
+	width: 586px;
+	height: 79px;
 	text-align: left;
 	font-size: 28px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 30px;
+	margin-left: 40px;
+	border: solid 1px #4F4F4F;
 }
 
 form textarea {
-	width: 500px;
-	height: 250px;
+	width: 586px;
+	height: 190px;
 	text-align: left;
 	font-size: 28px;
+	margin-left: 40px;
+	margin-top: 10px;
+	border: solid 1px #4F4F4F;
 }
 
 #submit {
-	width: 100px;
-	height: 50px;
+	width: 184px;
+	height: 45px;
+	color: #4F4F4F;
+	background-color: #f2f212;
+	display: block;
 	text-align: center;
+	margin-left: 40px;
+	border: solid 1px #4F4F4F;
 }
 
 #inquiry {
-	position: absolute;
-	left: 50px;
-	top: 10px;
+	display: block;
+}
+
+#submit2 {
+	background-color: #f2f212;
 }
 
 /*Common page elements  */
 
 #footer-con {
-	background-color: #aaaaaa;
+	background-image: linear-gradient(#AAFFFD, #29EAFF);
 	padding-top: 50px;
 	padding-bottom: 20px;
 }
