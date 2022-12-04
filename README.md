@@ -17,7 +17,8 @@ History
 11/30/22- Added pictures to code, added some enhanced pictures to folders, some CSS cleanup
 12/1/22- Added pictures to lightboxes, stylized index and mobile, updated assets like wireframe and logos
 12/2/22- Added assets to mobile layout, styled the pages according to wireframe, finished the mobile layouts, started to work on finishing the desktop layouts
-12/3/22- Updated assets like wireframe
+12/3/22- Updated assets like wireframe, created the final high res images
+12/4/22- Created the final lightboxes
 
 Credits
 Chi- Advisor, Motivator

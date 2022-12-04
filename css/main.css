@@ -445,7 +445,7 @@ form textarea {
 	margin-right: 150px;
   }
 
-  #lightbox2 p, #lightbox6 p, #lightbox7 p, #lightbox12 p {
+  #lightbox1 p, #lightbox2 p, #lightbox3 p, #lightbox4 p, #lightbox6 p, #lightbox7 p, #lightbox9 p, #lightbox12 p, #lightbox13 p, #lightbox15 p {
 	padding-top: 15px;
   }
 
@@ -457,12 +457,16 @@ form textarea {
 	font-family: Rubik Glitch;
   }
 
-  #lightbox8 p {
+  #lightbox5 p, #lightbox8 p, #lightbox11 p,  #lightbox14 p:first-of-type {
 	text-align: left;
 	padding-top: 300px;
   }
 
-  #lightbox8 .credit {
+  #lightbox14 p {
+	text-align: left;
+  }
+
+  #lightbox5 .credit, #lightbox8 .credit, #lightbox11 .credit, #lightbox14 .credit {
 	padding-top: 15px;
   }
 
@@ -475,7 +479,7 @@ form textarea {
 	padding-top: 300px;
   }
 
-  #lightbox12 article:hover {
+  #lightbox12 #creepy-text:hover {
 	font-family: Rubik Glitch;
   }
 
@@ -493,13 +497,21 @@ form textarea {
 	padding-top: 30px;
   }
 
-  #monikalb, #deadpoollb, #lightninglb {
+  #monikalb, #deadpoollb, #lightninglb, #chatnoirlb, #kiripoollb, #kiritolb, #redlb, #slendermanlb, #spidermanlb, #zeldalb {
 	height: 50%;
 	width: 50%;
 	margin-left:25%;
   }
 
-  #peachlb, #rosalinalb {
+  #kiripoollb:hover {
+	content: url(../images/lightbox_pics/kiripool_closeup.jpg);
+  }
+
+  #slendermanlb:hover {
+	content: url(../images/lightbox_pics/slenderman_cosplay_park.jpg);
+  }
+
+  #peachlb, #rosalinalb, #linklb, #serenalb, #starlordlb {
 	height: 30%;
 	width: 30%;
 	padding-left: 100px;
