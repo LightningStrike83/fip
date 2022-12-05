@@ -459,7 +459,21 @@ form textarea {
   .lightbox p {
 	text-align: center;
 	color: white;
-	font-size: 28px;
+	font-size: 26px;
 	margin-left: 150px;
 	margin-right: 150px;
+  }
+
+  #lightbox1_m p, #lightbox2_m p, #lightbox3_m p, #lightbox4_m p, #lightbox5_m p, #lightbox6_m p {
+	padding-top: 15px;
+  }
+
+  #chatnoirlb_m, #deadpoollb_m, #kiripoollb_m, #kiritolb_m, #linklb_m, #lightninglb_m {
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+  }
+
+  #kiripoollb_m:hover {
+	content: url(../images/lightbox_pics/kiripool_closeup2_m.jpg);
   }

@@ -381,23 +381,30 @@ form textarea {
 
 #footer-newsletter1 {
 	grid-column: 1/5;
+	font-size: 32px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+#footer-newsletter2 {
+	grid-column: 1/5;
 	/* Remove as content will dictate height */
 	height: 80px;
 }
 
-#footer-newsletter1 input {
+#footer-newsletter2 input {
 	width: 100%;
 	height: 75px;
 	text-align: left;
 	font-size: 28px;
 }
 
-#footer-newsletter2 {
+#footer-newsletter3 {
 	grid-column: 5/7;
 	height: 80px;
 }
 
-#footer-newsletter2 input {
+#footer-newsletter3 input {
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -408,116 +415,6 @@ form textarea {
 	grid-column: 11/-1;
 	height: 80px;
 }
-
-.lightbox {
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgba(0,0,0,0.85);
-	margin:0 auto;
-  }
-  
-  .lb_close {
-	color: rgb(255, 255, 255)!important;
-	font-size: 48px;
-	text-decoration: none;
-	position: sticky;
-	top: 10px;
-	left: 97%;
-  }
-  
-  .lb_close:hover {
-	opacity: 0.5; 
-  }
-
-  .lightbox:target {
-	display: block;
-  }
-
-  .lightbox p {
-	text-align: center;
-	color: white;
-	font-size: 28px;
-	margin-left: 150px;
-	margin-right: 150px;
-  }
-
-  #lightbox1 p, #lightbox2 p, #lightbox3 p, #lightbox4 p, #lightbox6 p, #lightbox7 p, #lightbox9 p, #lightbox12 p, #lightbox13 p, #lightbox15 p {
-	padding-top: 15px;
-  }
-
-  #lightbox7 span {
-	color: red;
-  }
-
-  #lightbox7 span span {
-	font-family: Rubik Glitch;
-  }
-
-  #lightbox5 p, #lightbox8 p, #lightbox11 p,  #lightbox14 p:first-of-type {
-	text-align: left;
-	padding-top: 300px;
-  }
-
-  #lightbox14 p {
-	text-align: left;
-  }
-
-  #lightbox5 .credit, #lightbox8 .credit, #lightbox11 .credit, #lightbox14 .credit {
-	padding-top: 15px;
-  }
-
-  #lightbox10 article a:hover {
-	text-decoration: underline;
-  }
-
-  #lightbox10 p {
-	text-align: center;
-	padding-top: 300px;
-  }
-
-  #lightbox12 #creepy-text:hover {
-	font-family: Rubik Glitch;
-  }
-
-  #lightbox16 article a {
-	position: absolute;
-	font-size: 28px;
-	top: 10px;
-	left: 10px;
-	padding-top: 10px;
-  }
-
-  .lightbox iframe {
-	width: 60%;
-	margin-left: 21%;
-	padding-top: 30px;
-  }
-
-  #monikalb, #deadpoollb, #lightninglb, #chatnoirlb, #kiripoollb, #kiritolb, #redlb, #slendermanlb, #spidermanlb, #zeldalb {
-	height: 50%;
-	width: 50%;
-	margin-left:25%;
-  }
-
-  #kiripoollb:hover {
-	content: url(../images/lightbox_pics/kiripool_closeup.jpg);
-  }
-
-  #slendermanlb:hover {
-	content: url(../images/lightbox_pics/slenderman_cosplay_park.jpg);
-  }
-
-  #peachlb, #rosalinalb, #linklb, #serenalb, #starlordlb {
-	height: 30%;
-	width: 30%;
-	padding-left: 100px;
-	float: left;
-	padding-right: 50px;
-  }
 
 
 /* gallery page */
@@ -619,3 +516,121 @@ form textarea {
 	left: 0;
 	right: 0;
 }
+
+.lightbox {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.85);
+	margin:0 auto;
+  }
+  
+  .lb_close {
+	color: rgb(255, 255, 255)!important;
+	font-size: 48px;
+	text-decoration: none;
+	position: sticky;
+	top: 10px;
+	left: 97%;
+  }
+  
+  .lb_close:hover {
+	opacity: 0.5; 
+  }
+
+  .lightbox:target {
+	display: block;
+  }
+
+  .lightbox p {
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+	margin-left: 150px;
+	margin-right: 150px;
+  }
+
+  #lightbox1 p, #lightbox2 p, #lightbox3 p, #lightbox4 p, #lightbox6 p, #lightbox7 p, #lightbox9 p, #lightbox12 p, #lightbox13 p, #lightbox15 p {
+	padding-top: 15px;
+  }
+
+  #lightbox7 span {
+	color: red;
+  }
+
+  #lightbox7 span span {
+	font-family: Rubik Glitch;
+  }
+
+  #lightbox5 p, #lightbox8 p, #lightbox11 p,  #lightbox14 p:first-of-type {
+	text-align: left;
+	padding-top: 300px;
+  }
+
+  #lightbox14 p {
+	text-align: left;
+  }
+
+  #lightbox5 .credit, #lightbox8 .credit, #lightbox11 .credit, #lightbox14 .credit {
+	padding-top: 15px;
+  }
+
+  #lightbox10 article a:hover {
+	text-decoration: underline;
+  }
+
+  #lightbox10 p {
+	text-align: center;
+	padding-top: 300px;
+  }
+
+  #lightbox12 #creepy-text:hover {
+	font-family: Rubik Glitch;
+  }
+
+  #lightbox16 article a {
+	position: absolute;
+	font-size: 28px;
+	top: 10px;
+	left: 10px;
+	padding-top: 10px;
+  }
+
+  .lightbox iframe {
+	width: 60%;
+	margin-left: 21%;
+	padding-top: 30px;
+  }
+
+  #monikalb, #deadpoollb, #lightninglb, #chatnoirlb, #kiripoollb, #kiritolb, #redlb, #slendermanlb, #spidermanlb, #zeldalb {
+	height: 50%;
+	width: 50%;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+  }
+
+  #redlb:hover {
+	content: url(../images/lightbox_pics/red_cosplay_bw.jpg);
+  }
+
+  #kiripoollb:hover {
+	content: url(../images/lightbox_pics/kiripool_closeup2.jpg);
+  }
+
+  #slendermanlb:hover {
+	content: url(../images/lightbox_pics/slenderman_cosplay_park2.jpg);
+  }
+
+  #peachlb, #rosalinalb, #linklb, #serenalb, #starlordlb {
+	height: 30%;
+	width: 30%;
+	padding-left: 100px;
+	float: left;
+	padding-right: 50px;
+	display: block;
+  }
