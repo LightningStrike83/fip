@@ -8,66 +8,71 @@
 <link href="https://fonts.googleapis.com/css2?family=Constantia&display=swap" rel="stylesheet">
 <link href="css/main-mobile.css" rel="stylesheet" type="text/css">
 </head>
-<!-- students must convert divs to semantic tags -->
+
 <body>
 	<div id="container">
-        
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <a href="index.html"><img class="main-logo-m" src="images/icons/new_logo_colour.svg" alt="top logo"></a>
+        <header id="header-con">
+            <section id="main-header" class="grid-con">
+                <h2 class="hidden">Index Header</h2>
+                <a href="index_mobile.html"><img class="main_logo_m" src="images/icons/new_logo_colour.svg" alt="top logo"></a>
                  <div id="mobile-nav">
                     <span class="burger"></span>
                     <span class="burger"></span>
                     <span class="burger"></span>
                  </div>
-            </div>    
-        </div> 
+            </section>    
+        </header> 
 
         <main>
-            <div id="hero-con">
+            <section id="hero-con">
+                <h2 class="hidden">Top Story</h2>
                 <div class="grid-con">
-                    <div id="hero-text">
+                    <article id="hero-text">
                         <h5>Just Lightning</h5>
                         <p>The newest cosplay has just arrived, and with it comes some fun! Straight from the hit visual novel/horror game, we have Monika from Doki Doki Literature Club!
                         <p>Intelligent, beautiful, hard-working, supportive, it's almost as if Monika was made for Lightning to cosplay! Thanks to miccostumes, Lightning can now simulate Monika coming to our reality. Just Monika, Just Lightning.</p>
                         <p>"<a href="#"><u>Read More</u></a>" to read a bio about Monika and view more pics of this stunning cosplay! Don't leave Monika and Lightning hanging!</p>
-                    </div>
+                    </article>
                 </div>
-            </div>
+            </section>
 
-            <div id="image-slider-con">
+            <section id="image-slider-con">
                 <h2>Previous Articles</h2>
-                <a href="#"><img src="images/mobile_index/peach_park_m.jpg" alt="Princess Peach Cosplay"></a>
-                    <h5>The Princess Has Arrived</h5>
+                <article id="previous_story_1">
+                    <a href="#"><img src="images/mobile_index/peach_park_m.jpg" alt="Princess Peach Cosplay"></a>
+                     <h5>The Princess Has Arrived</h5>
                         <p>This princess is no longer in another castle and has arrived safely! Straight from the Mushroom Kingdom, Princess Peach has joined the cosplay closet!</p>
-                <!-- ascii symbols for <> -->
-                <span id="mobile-slider-left">&#60</span>
-                <span id="mobile-slider-right">&#62</span>
-            </div>
+                    <span id="mobile-slider-left">&#60;</span>
+                    <span id="mobile-slider-right">&#62;</span>
+                </article>
+            </section>
 
-            <div id="about-us-con">
+            <section id="about-cosplayer-con">
                 <h2>The Many Faces Of Lightning</h2>   
-                    <div id="about-us-text-con">     
+                    <div id="about-cosplayer-text-con">     
                         <div class="grid-con">
-                            <div id="about-us-text">
+                            <article id="about-cosplayer-text">
                                 <h2>The Closet</h2>
                                 <p>From Deadpool to Rosalina, and everything else in between, Lightning has cosplayed a wide variety of characters from many different series.</p>
                                 <p>These cosplays have been adored by many alike, and some even made special public appearances at conventions!</p>
                                 <p>Feel free to "<a href="gallery_mobile.html"><u>view the gallery</u></a>"" to see a directory of all the cosplays and see them all in action!</p>
-                            </div>
+                            </article>
                         </div>      
                     </div>  
-                    <div class="grid-con" id="about-us-photos">
-                        <img src="images/mobile_index/lightning_circle1_m.png" alt="Lightning Preview" class="about-us-photo">
-                        <img src="images/mobile_index/rosalina_circle2_m.png" alt="Rosalina Preview" class="about-us-photo">
-                        <img src="images/mobile_index/slendy_circle3_m.png" alt="Slender Man Preview" class="about-us-photo">
-                        <img src="images/mobile_index/kiripool_circle4.png" alt="Kiripool Preview" class="about-us-photo">
-                    </div>         
-            </div>
+                    <section class="grid-con" id="about-cosplayer-photos">
+                        <h2 class="hidden">Cosplay Previews</h2>
+                        <img src="images/mobile_index/lightning_circle1_m.png" alt="Lightning Preview" class="about-cosplayer-photo">
+                        <img src="images/mobile_index/rosalina_circle2_m.png" alt="Rosalina Preview" class="about-cosplayer-photo">
+                        <img src="images/mobile_index/slendy_circle3_m.png" alt="Slender Man Preview" class="about-cosplayer-photo">
+                        <img src="images/mobile_index/kiripool_circle4.png" alt="Kiripool Preview" class="about-cosplayer-photo">
+                    </section>         
+                </section>
 
-            <div id="contact-us-con">
+            <section id="contact-us-con">
+                <h2 class="hidden">Contact Section</h2>
                 <div class="grid-con">
-                    <div id="contact-text">
+                    <section id="contact-text">
+                        <h2 class="hidden">Contact Information</h2>
                         <h5>Feel free to contact me</h5>
                         <p>If you have any questions, feel free to reach out and contact Lightning! These can range from, but aren't limited to:</p>
                         <ul>
@@ -77,9 +82,10 @@
                             <li>Booking for an in real life convention</li>
                             <li>Booking for a virtual convention</li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
-                <div id="contact-form">
+                <section id="contact-form">
+                    <h2 class="hidden">Contact Form</h2>
                     <form id="inquiry" method="post" action="#">
                         <label for="preferred_name"></label>
                            <input id="preferred_name" name="preferred_name" type="text" placeholder="Preferred Name"><br><br>
@@ -90,28 +96,32 @@
                         <label for="subject"></label>
                             <input id="subject" name="subject" type="text" placeholder="Subject"><br><br>
 
-                        <label for= "body"></label><br>
+                        <label for="body"></label><br>
                             <textarea id="comments" name= "comments" placeholder="Write Your Message Here"></textarea> <br><br>
-                        
+    
                         <input type="submit" value="Send" id="submit">
-                </div>
-            </div>
+                    </form>
+                </section>
+            </section>
         </main>
 
-        <div id="footer-con_m">
+        <footer id="footer-con_m">
             <div class="grid-con">
-                <div id="footer-box">
-                    <img class="main-logo-m" src="images/icons/new_logo_colour.svg" alt="footer logo">
-                </div>
-                <div id="footer-newsletter">
+                <article id="footer-box">
+                    <h2 class="hidden">Footer Logo</h2>
+                    <img class="main_logo_m" src="images/icons/new_logo_colour.svg" alt="footer logo">
+                </article>
+                <article id="footer-newsletter">
+                    <h2 class="hidden">Newsletter</h2>
                     <p>Newsletter- Sign Up!</p>
                     <input id="email-news" name="email-news" type="text" placeholder="Email">
-                </div>
-                <div id="footer-newsletter2">
-                    <input type="submit" value="Submit" id="submit2">
-                </div>
+                </article>
+                <article id="footer-newsletter2">
+                    <h2 class="hidden">Submit Button</h2>
+                    <input type="submit" value="Send" id="submit2">
+                </article>
             </div>
-        </div>
+        </footer>
 
     </div>
 </body>

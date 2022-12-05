@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*basic reset*/
-
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+/*html selectors*/
 
 div,p,body,header,footer,section,article,nav { 
 	margin: 0; 
@@ -16,16 +14,12 @@ img {
 	padding: 0; 
 }
 
-/*html selectors*/
-
 body {
 	font-family: Constantia, Arial, sans-serif;
 	font-size: 12px;
 	position: relative;
 	color: #4F4F4F;
 }
-
-/* Remove underlines from links */
 
 a {
 	text-decoration: none;
@@ -39,26 +33,10 @@ a:visited {
 	color: inherit;
 }
 
-/*hide elements from browser but show for doc outline*/
-
-.hidden {
-	display: none;
-}
-
-
 /*Common page elements  */
 
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 428px.
-428px would fit some phones. Sizes will vary depending on the projects
-you work on and the intended audience, we may go as low as 320px */
+/* html classes */
 
-#container {
-	margin: 0 auto;
-	width: 428px;
-}
-
-/* this is our grid based off of our XD file */
 .grid-con {
 	display: grid;
 	grid-template-columns: repeat(4, 85px);
@@ -67,8 +45,27 @@ you work on and the intended audience, we may go as low as 320px */
 	padding-right: 20px;
 }
 
-.main-logo-m {
+.main_logo_m {
 	height: 65px;
+}
+
+.burger {
+	height: 7px;
+	background-color:#4F4F4F;
+	display: block;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* selectors ids */
+
+#container {
+	margin: 0 auto;
+	width: 428px;
 }
 
 #header-con {
@@ -85,198 +82,6 @@ you work on and the intended audience, we may go as low as 320px */
 	grid-column: 4/-1;
 	cursor: pointer;
 }
-
-.burger {
-	height: 7px;
-	background-color:#4F4F4F;
-	display: block;
-	margin-bottom: 12px;
-	margin-top: 12px;
-}
-
-/* index page */
-
-#hero-con {
-	background-color: #aaaaaa;
-	background: url("../images/mobile_index/monika_top_story_m.jpg");
-	height: 800px;
-}
-
-#hero-text {
-	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 380px;
-	text-align: left;
-	color: #f5f5f5;
-}
-
-#hero-text h5 {
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-bottom: 0;
-	font-size: 40px;
-}
-
-#hero-text p {
-	font-size: 28px;
-	margin-top: 20px;
-	margin-left: 10px;
-}
-
-#image-slider-con {
-	background-color: #29EAFF;
-	/* Remove as content will dictate height */
-	height: 740px;
-	position: relative;
-}
-
-#image-slider-con h2 {
-	background-color: #ffffff;
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin: 0;
-	font-size: 48px;
-}
-
-#image-slider-con h5 {
-	text-align: left;
-	font-size: 40px;
-	padding-left: 10px;
-	padding-right: 30px;
-	margin-top: 10px;
-	margin-bottom: 0;
-}
-
-#image-slider-con p {
-	font-size: 28px;
-	text-align: left;
-	margin-top: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-#mobile-slider-left {
-	position: absolute;
-	left: 0;
-	font-size: 120px;
-	color:#fff;
-	top: 200px;
-	cursor: pointer;
-}
-
-#mobile-slider-right {
-	position: absolute;
-	right: 0;
-	font-size: 120px;
-	color:#fff;
-	top: 200px;
-	cursor: pointer;
-}
-
-#about-us-con h2 {
-	text-align: center;
-	padding-top: 30px;
-	margin-top: 10px;
-	font-size: 48px;
-}
-
-#about-us-text-con {
-	background-image: linear-gradient(#AAFFFD, #29EAFF);
-}
-
-#about-us-text {
-	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 610px;
-}
-
-#about-us-text h2 {
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
-
-#about-us-text p {
-	font-size: 28px;
-	padding-top: 15px;
-}
-
-.about-us-photo {
-	grid-column: 1/-1;
-	display: block;
-	margin: 20px auto 0 auto;
-}
-
-#contact-us-con {
-	margin-top: 30px;
-}
-
-#contact-text {
-	grid-column: 1/-1;
-	height: 750px;
-	text-align: left;
-}
-
-#contact-text h5 {
-	font-size: 48px;
-}
-
-#contact-text p, #contact-text li {
-	font-size: 28px;
-	padding-top: 12px;
-}
-
-#contact-text h5, #contact-text p {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding-left: 40px;
-}
-
-#contact-form {
-	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 689px;
-	width: 428px;
-	text-align: center;
-	display: flex;
-}
-
-form {
-	background-image: radial-gradient(#AAFFFD,#29EAFF);
-	width: 428px;
-	grid-column: 1/-1;
-}
-
-form input {
-	width: 340px;
-	height: 79px;
-	text-align: left;
-	font-size: 28px;
-	margin-top: 10px;
-	border: solid 1px #4F4F4F;
-}
-
-form textarea {
-	width: 350px;
-	height: 250px;
-	text-align: left;
-	font-size: 28px;
-	border: solid 1px #4F4F4F;
-}
-
-#submit {
-	width: 184px;
-	height: 45px;
-	color: #4F4F4F;
-	background-color: #f2f212;
-	display: block;
-	text-align: center;
-	margin-left: 37px;
-	border: solid 1px #4F4F4F;
-}
-
-
-/*Common page elements  */
 
 #footer-con_m {
 	height: 350px;
@@ -328,45 +133,192 @@ form textarea {
 	border: solid 1px #4F4F4F;
 }
 
-/* gallery page */
+/* index page */
 
-#hero-gallery-con {
-	background-color: #aaaaaa;
-	background: url("../images/mobile_gallery/hero_monika_m.jpg");
-	height: 500px;
-}
+/* index general selectors */
 
-#hero-gallery-text h5 {
-	font-size: 48px;
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 20px;
-	margin-block-end: 0;
-}
-
-#hero-gallery-text p {
-	font-size: 28px;
-	margin-top: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-
-#hero-gallery-text {
+form {
+	background-image: radial-gradient(#AAFFFD,#29EAFF);
+	width: 428px;
 	grid-column: 1/-1;
-	/* Remove as content will dictate height */
-	height: 350px;
+}
+
+form input {
+	width: 340px;
+	height: 79px;
+	text-align: left;
+	font-size: 28px;
+	margin-top: 10px;
+	border: solid 1px #4F4F4F;
+}
+
+form textarea {
+	width: 350px;
+	height: 250px;
+	text-align: left;
+	font-size: 28px;
+	border: solid 1px #4F4F4F;
+}
+
+/* index classes */
+
+.about-cosplayer-photo {
+	grid-column: 1/-1;
+	display: block;
+	margin: 20px auto 0 auto;
+}
+
+/* index ids */
+
+#hero-con {
+	background-color: #aaaaaa;
+	background: url("../images/mobile_index/monika_top_story_m.jpg");
+	height: 800px;
+}
+
+#hero-text {
+	grid-column: 1/-1;
+	height: 380px;
+	text-align: left;
 	color: #f5f5f5;
 }
 
-#gallery-controls {
-	grid-column: 1/-1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-	padding-top: 80px;
+#hero-text h5 {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 0;
+	font-size: 40px;
 }
+
+#hero-text p {
+	font-size: 28px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+#image-slider-con {
+	background-color: #29EAFF;
+	height: 740px;
+	position: relative;
+}
+
+#image-slider-con h2 {
+	background-color: #ffffff;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0;
+	font-size: 48px;
+}
+
+#image-slider-con h5 {
+	text-align: left;
+	font-size: 40px;
+	padding-left: 10px;
+	padding-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#image-slider-con p {
+	font-size: 28px;
+	text-align: left;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#mobile-slider-left {
+	position: absolute;
+	left: 0;
+	font-size: 120px;
+	color:#fff;
+	top: 200px;
+	cursor: pointer;
+}
+
+#mobile-slider-right {
+	position: absolute;
+	right: 0;
+	font-size: 120px;
+	color:#fff;
+	top: 200px;
+	cursor: pointer;
+}
+
+#about-cosplayer-con h2 {
+	text-align: center;
+	padding-top: 30px;
+	margin-top: 10px;
+	font-size: 48px;
+}
+
+#about-cosplayer-text-con {
+	background-image: linear-gradient(#AAFFFD, #29EAFF);
+}
+
+#about-cosplayer-text {
+	grid-column: 1/-1;
+	height: 610px;
+}
+
+#about-cosplayer-text h2 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#about-cosplayer-text p {
+	font-size: 28px;
+	padding-top: 15px;
+}
+
+#contact-cosplayer-con {
+	margin-top: 30px;
+}
+
+#contact-text {
+	grid-column: 1/-1;
+	height: 750px;
+	text-align: left;
+}
+
+#contact-text h5 {
+	font-size: 48px;
+}
+
+#contact-text p, #contact-text li {
+	font-size: 28px;
+	padding-top: 12px;
+}
+
+#contact-text h5, #contact-text p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 40px;
+}
+
+#contact-form {
+	grid-column: 1/-1;
+	height: 689px;
+	width: 428px;
+	text-align: center;
+	display: flex;
+}
+
+#submit {
+	width: 184px;
+	height: 45px;
+	color: #4F4F4F;
+	background-color: #f2f212;
+	display: block;
+	text-align: center;
+	margin-left: 37px;
+	border: solid 1px #4F4F4F;
+}
+
+/* gallery page */
+
+/* gallery page classes */
 
 .dot {
 	background-color: #f5f5f5;
@@ -377,17 +329,8 @@ form textarea {
 	cursor: pointer;
   }
 
-#gallery h2 {
-	text-align: center;
+  .gallery-box {
 	grid-column: 1/-1;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-size: 48px;
-}
-
-.gallery-box {
-	grid-column: 1/-1;
-	/* Remove as content will dictate height */
 	height: 507px;
 	margin-bottom: 20px;
 	position: relative;
@@ -417,17 +360,6 @@ form textarea {
 	right: 0;
 }
 
-#more {
-	grid-column: 4/-1;
-	font-size: 28px;
-	padding-bottom: 10px;
-	color: blue;
-}
-
-#more:hover {
-	text-decoration: underline;
-}
-
 .lightbox {
 	display: none;
 	width: 100%;
@@ -439,41 +371,96 @@ form textarea {
 	margin:0 auto;
   }
   
-  .lb_close {
+.lb_close {
 	color: rgb(255, 255, 255)!important;
 	font-size: 48px;
 	text-decoration: none;
 	position: sticky;
 	top: 10px;
 	left: 97%;
-  }
+}
   
-  .lb_close:hover {
+.lb_close:hover {
 	opacity: 0.5; 
-  }
+}
 
-  .lightbox:target {
+.lightbox:target {
 	display: block
-  }
+}
 
-  .lightbox p {
+.lightbox p {
 	text-align: center;
 	color: white;
 	font-size: 26px;
 	margin-left: 150px;
 	margin-right: 150px;
-  }
-
-  #lightbox1_m p, #lightbox2_m p, #lightbox3_m p, #lightbox4_m p, #lightbox5_m p, #lightbox6_m p {
 	padding-top: 15px;
-  }
+}
 
-  #chatnoirlb_m, #deadpoollb_m, #kiripoollb_m, #kiritolb_m, #linklb_m, #lightninglb_m {
+.mobile_lightbox {
 	display: block;
   	margin-left: auto;
  	margin-right: auto;
-  }
+}
 
-  #kiripoollb_m:hover {
+/* gallery page ids */
+
+#hero-gallery-con {
+	background-color: #aaaaaa;
+	background: url("../images/mobile_gallery/hero_monika_m.jpg");
+	height: 500px;
+}
+
+#hero-gallery-text h5 {
+	font-size: 48px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 20px;
+	margin-block-end: 0;
+}
+
+#hero-gallery-text p {
+	font-size: 28px;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+#hero-gallery-text {
+	grid-column: 1/-1;
+	height: 350px;
+	color: #f5f5f5;
+}
+
+#gallery-controls {
+	grid-column: 1/-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	padding-top: 80px;
+}
+
+#gallery h2 {
+	text-align: center;
+	grid-column: 1/-1;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 48px;
+}
+
+#more {
+	grid-column: 4/-1;
+	font-size: 28px;
+	padding-bottom: 10px;
+	color: blue;
+}
+
+#more:hover {
+	text-decoration: underline;
+}
+
+#kiripoollb_m:hover {
 	content: url(../images/lightbox_pics/kiripool_closeup2_m.jpg);
-  }
+}

@@ -8,16 +8,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Constantia&display=swap" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 </head>
-<!-- students must convert divs to semantic tags -->
+
 <body>
+    <h1 class="hidden">Lightning Cosplay</h1>
 	<div id="container">
-        
-        <div id="header-con">
-            <div id="main-header" class="grid-con">
-                <div id="header-box1" >
+
+        <header id="header-con">
+            <section id="main-header" class="grid-con">
+                <h2 class="hidden">Index Header</h2>
+                <article id="header-box1">
+                    <h2 class="hidden">Index Logo</h2>
                     <a href="index.html"><img class="main-logo" src="images/icons/new_logo_colour.svg" alt="top logo"></a>
-                </div>
-                <div id="main-nav">
+                </article>
+                <nav id="main-nav">
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="#">Archive</a></li>
@@ -26,61 +29,72 @@
                         <li><a href="#">Store</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
-                <div id="header-box2" class="logos" class="grid">
+                </nav>
+                <article id="header-box2" class="logos grid">
+                    <h2 class="hidden">Header Logos</h2>
                     <a href="#"><img src="images/icons/facebook_logo.svg" alt="Facebook Logo"></a>
-                    <a href="#"><img id="youtube" src="images/icons/youtube_logo.svg" alt="Youtube Logo"></a>
+                    <a href="#"><img src="images/icons/youtube_logo.svg" alt="Youtube Logo"></a>
                     <a href="#"><img src="images/icons/instagram_logo.svg" alt="Instagram Logo"></a>
-                </div>
-            </div>
-        </div> 
+                </article>
+            </section>
+        </header> 
 
         <main>
-            <div class="grid-con" id="hero">
-                <div id="hero-text">
+            <section class="grid-con" id="hero">
+                <h2 class="hidden">Index Hero</h2>
+                <article id="hero-text">
+                    <h2 class="hidden">Top Story</h2>
                     <h4>Just Lightning</h4>
                     <p>The newest cosplay has just arrived, and with it comes some fun! Straight from the hit visual novel/horror game, we have Monika from Doki Doki Literature Club!
                     <p>Intelligent, beautiful, hard-working, supportive, it's almost as if Monika was made for Lightning to cosplay! Thanks to miccostumes, Lightning can now simulate Monika coming to our reality. Just Monika, Just Lightning.</p>
                     <p><a href="#">"Read More"</a> to read a bio about Monika and view more pics of this stunning cosplay! Don't leave Monika and Lightning hanging!</p>
-                </div>
+                </article>
                 <a href="#"><img src="images/desktop_index/monika_top_story.jpg" alt="Monika Cosplay" id="hero-image"></a>
-            </div>  
+            </section>  
 
-            <div class="grid-con" id="previous">
+            <section class="grid-con" id="previous">
                 <h2>Previous Articles</h2>
-                <div class="product-box" id="peach_cos">
+                <article class="product-box" id="peach_cos">
+                    <h2 class="hidden">Story 1</h2>
                     <a href="#"><img src="images/desktop_index/peach_story1.jpg" alt="Princess Peach Cosplay"></a>
                     <h5>The Princess Has Safely Arrived!</h5>
                     <p>This princess is no longer in another castle and has arrived! Straight from the Mushroom Kingdom, Princess Peach has joined the cosplay closet!</p>
-                </div>
-                <div class="product-box" id="serena_lillie">
+                </article>
+                <article class="product-box" id="serena_lillie">
+                    <h2 class="hidden">Story 2</h2>
                     <a href="#"><img src="images/desktop_index/serena_lillie_story2.jpg" alt="Serena and Lillie Cosplay"></a>
                     <h5>Serena and Lillie at London Comic Con</h5>
                     <p>A pair of beautiful Pokémon trainers made a special appearance at London Comic-Con, 2022!</p>
-                </div>
-                <div class="product-box" id="kiripool_home">
+                </article>
+                <article class="product-box" id="kiripool_home">
+                    <h2 class="hidden">Story 3</h2>
                     <a href="#"><img src="images/desktop_index/kiripool_story3.jpg" alt="Kiripool Cosplay"></a>
                     <h5>New Cosplay Fusion: Kiripool</h5>
                     <p>A new cosplay idea has sprung forth, by combining two already existing cosplays. Dual wielding with rubber chickens, we have none other than the Beater With The Mouth: Kiripool!</p>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            <h2 id="about-title">The Many Faces Of Lightning</h2>
-            <div id="about-con">
-                <div class="grid-con" id="about">
-                    <div id="about-text">
-                        <p>From Deadpool to Rosalina, and everything else in between, Lightning has cosplayed a wide variety of characters from many different series.</p>
-                        <p>These cosplays have been adored by many alike, and some even made special public appearances at conventions!</p>
-                        <p>Feel free to <a href="gallery.html">view the gallery</a> to see a directory of all the cosplays and see them all in action!</p>
+            <section>
+                <h2 id="about-title">The Many Faces Of Lightning</h2>
+                <div id="about-con">
+                    <div class="grid-con" id="about">
+                        <article id="about-text">
+                            <h2 class="hidden">About The Cosplayer</h2>
+                            <p>From Deadpool to Rosalina, and everything else in between, Lightning has cosplayed a wide variety of characters from many different series.</p>
+                            <p>These cosplays have been adored by many alike, and some even made special public appearances at conventions!</p>
+                            <p>Feel free to <a href="gallery.html">view the gallery</a> to see a directory of all the cosplays and see them all in action!</p>
+                        </article>
+                        <img src="images/desktop_index/cosplay_circle_group.png" alt="Four Cosplays" id="about-image">
                     </div>
-                    <img src="images/desktop_index/cosplay_circle_group.png" alt="Four Cosplays" id="about-image">
                 </div>
-            </div>
+            </section>
             
-            <div class="grid-con" id="contact">
-                <div id="contact-text">
+            <section class="grid-con" id="contact">
+                <h2 class="hidden">Contact Area</h2>
+                <article id="contact-text">
+                    <h2 class="hidden">Contact Text</h2>
                     <p id="free"><b>Feel free to contact me</b></p>
-                    <p>If you have any questions, feel free to reach out and contact Lightning!
+                    <p>If you have any questions, feel free to reach out and contact Lightning!</p>
                     <p>These can range from, but aren't limited to:</p>
                     <ul id="contact_list">
                         <li>Requesting a cosplay you'd like to see</li>
@@ -89,8 +103,9 @@
                         <li>Booking for an in real life convention</li>
                         <li>Booking for a virtual convention</li>
                     </ul>
-                </div>
-                <div id="contact-form">
+                </article>
+                <article id="contact-form">
+                    <h2 class="hidden">Contact Form</h2>
                     <form id="inquiry" method="post" action="#">
                         <label for="preferred_name"></label>
                            <input id="preferred_name" name="preferred_name" type="text" placeholder="Preferred Name"><br><br>
@@ -105,41 +120,48 @@
                             <textarea id="comments" name= "comments" placeholder="Write Your Message Here"></textarea> <br><br>
                         
                         <input type="submit" value="Send" id="submit">
-                </div>
-            </div> 
+                    </form>
+                </article>
+            </section> 
         </main>
 
-        <div id="footer-con">
-            <div class="grid-con" id="footer">
-                <div id="footer-logo">
+        <footer id="footer-con">
+            <section class="grid-con" id="footer">
+                <h2 class="hidden">Footer Area</h2>
+                <article id="footer-logo">
+                    <h2 class="hidden">Footer Logo</h2>
                     <img class="main-logo" src="images/icons/new_logo_colour.svg" alt="footer logo">
-                </div>
-                <div id="footer-nav">
+                </article>
+                <nav id="footer-nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Archive</a></li>
-                        <li><a href="gallery.html">Gallery</b></a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="#">Bio</a></li>
                         <li><a href="#">Store</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
-                <div id="footer-newsletter1">
+                </nav>
+                <article id="footer-newsletter1">
+                    <h2 class="hidden">Newsletter Encouragement</h2>
                     <p>Newsletter- Sign Up!</p>
-                </div>
-                <div id="footer-newsletter2">
+                </article>
+                <article id="footer-newsletter2">
+                    <h2 class="hidden">Email Area</h2>
                     <input id="email-news" name="email-news" type="text" placeholder="Email">
-                </div>
-                <div id="footer-newsletter3">
+                </article>
+                <article id="footer-newsletter3">
+                    <h2 class="hidden">Submit Button</h2>
                     <input type="submit" value="Submit" id="submit2">
-                </div>
-                <div id="footer-social" class="logos">
+                </article>
+                <article id="footer-social" class="logos">
+                    <h2 class="hidden">Footer Logos</h2>
                     <a href="#"><img src="images/icons/facebook_logo.svg" alt="Facebook Logo"></a>
-                    <a href="#"><img id="youtube" src="images/icons/youtube_logo.svg" alt="Youtube Logo"></a>
+                    <a href="#"><img src="images/icons/youtube_logo.svg" alt="Youtube Logo"></a>
                     <a href="#"><img src="images/icons/instagram_logo.svg" alt="Instagram Logo"></a>
-                </div>
-            </div>
-        </div>
+                </article>
+            </section>
+        </footer>
 
     </div> 
 </body>

@@ -30,7 +30,6 @@ img {
 	padding-right: 15px;
 	display: grid;
 	grid-template-columns: repeat(12, 70px);
-	column-gap: 30px;
  }
  
 
@@ -63,7 +62,6 @@ a {
 
 .logos img {
 	height: 50px;
-	width: 50px;
 	padding: 8px;
 }
 
@@ -72,7 +70,7 @@ a {
 	border-bottom: solid #4f4f4f 5px;
  }
 
-#youtube {
+.youtube {
 	width: 75px;
 }
 
@@ -113,7 +111,6 @@ you work on and the intended audience */
 	width: 1920px;
 }
 
-/* this is our grid based off of our XD file */
 .grid-con {
 	display: grid;
 	grid-template-columns: repeat(12, 122px);
