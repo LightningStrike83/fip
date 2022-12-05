@@ -19,7 +19,7 @@ History
 12/2/22- Added assets to mobile layout, styled the pages according to wireframe, finished the mobile layouts, started to work on finishing the desktop layouts
 12/3/22- Updated assets like wireframe, created the final high res images
 12/4/22- Created and styled the final lightboxes, cleaned up the wireframe (and added lightboxes to it)
-12/5/22- Finalized the project by organizing everything and cleaning up the code, revamped the design and wireframe slightly, updated the file sizes of images, organized everything in the folders to hand in
+12/5/22- Finalized the project by organizing everything and cleaning up the code, revamped the design and wireframe slightly, updated the file sizes of images, added sitemap and wireframe to assets as they were believed to be needed, organized everything in the folders to hand in
 
 Credits
 Chi- Advisor, Motivator
