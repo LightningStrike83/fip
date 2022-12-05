@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Constantia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tahoma&display=swap" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 </head>
 
@@ -21,6 +22,7 @@
                     <a href="index.html"><img class="main-logo" src="images/icons/new_logo_colour.svg" alt="top logo"></a>
                 </article>
                 <nav id="main-nav">
+                    <h2 class="hidden">Header Nav</h2>
                     <ul>
                         <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="#">Archive</a></li>
@@ -44,7 +46,7 @@
                 <h2 class="hidden">Index Hero</h2>
                 <article id="hero-text">
                     <h2 class="hidden">Top Story</h2>
-                    <h4>Just Lightning</h4>
+                    <p id="just_lightning">Just Lightning</p>
                     <p>The newest cosplay has just arrived, and with it comes some fun! Straight from the hit visual novel/horror game, we have Monika from Doki Doki Literature Club!
                     <p>Intelligent, beautiful, hard-working, supportive, it's almost as if Monika was made for Lightning to cosplay! Thanks to miccostumes, Lightning can now simulate Monika coming to our reality. Just Monika, Just Lightning.</p>
                     <p><a href="#">"Read More"</a> to read a bio about Monika and view more pics of this stunning cosplay! Don't leave Monika and Lightning hanging!</p>
@@ -54,30 +56,32 @@
 
             <section class="grid-con" id="previous">
                 <h2>Previous Articles</h2>
-                <article class="product-box" id="peach_cos">
+                <article class="cosplay_story" id="peach_cos">
                     <h2 class="hidden">Story 1</h2>
                     <a href="#"><img src="images/desktop_index/peach_story1.jpg" alt="Princess Peach Cosplay"></a>
-                    <h5>The Princess Has Safely Arrived!</h5>
+                    <p class="headline">The Princess Has Safely Arrived!</p>
                     <p>This princess is no longer in another castle and has arrived! Straight from the Mushroom Kingdom, Princess Peach has joined the cosplay closet!</p>
                 </article>
-                <article class="product-box" id="serena_lillie">
+                <article class="cosplay_story" id="serena_lillie">
                     <h2 class="hidden">Story 2</h2>
                     <a href="#"><img src="images/desktop_index/serena_lillie_story2.jpg" alt="Serena and Lillie Cosplay"></a>
-                    <h5>Serena and Lillie at London Comic Con</h5>
+                    <p class="headline">Serena and Lillie at London Comic Con</p>
                     <p>A pair of beautiful Pokémon trainers made a special appearance at London Comic-Con, 2022!</p>
                 </article>
-                <article class="product-box" id="kiripool_home">
+                <article class="cosplay_story" id="kiripool_home">
                     <h2 class="hidden">Story 3</h2>
                     <a href="#"><img src="images/desktop_index/kiripool_story3.jpg" alt="Kiripool Cosplay"></a>
-                    <h5>New Cosplay Fusion: Kiripool</h5>
+                    <p class="headline">New Cosplay Fusion: Kiripool</p>
                     <p>A new cosplay idea has sprung forth, by combining two already existing cosplays. Dual wielding with rubber chickens, we have none other than the Beater With The Mouth: Kiripool!</p>
                 </article>
             </section>
 
             <section>
                 <h2 id="about-title">The Many Faces Of Lightning</h2>
-                <div id="about-con">
-                    <div class="grid-con" id="about">
+                <section id="about-con">
+                    <h2 class="hidden">Cosplayer Elements</h2>
+                    <article class="grid-con" id="about">
+                        <h2 class="hidden">About</h2>
                         <article id="about-text">
                             <h2 class="hidden">About The Cosplayer</h2>
                             <p>From Deadpool to Rosalina, and everything else in between, Lightning has cosplayed a wide variety of characters from many different series.</p>
@@ -85,8 +89,8 @@
                             <p>Feel free to <a href="gallery.html">view the gallery</a> to see a directory of all the cosplays and see them all in action!</p>
                         </article>
                         <img src="images/desktop_index/cosplay_circle_group.png" alt="Four Cosplays" id="about-image">
-                    </div>
-                </div>
+                    </article>
+                </section>
             </section>
             
             <section class="grid-con" id="contact">
@@ -116,7 +120,7 @@
                         <label for="subject"></label>
                             <input id="subject" name="subject" type="text" placeholder="Subject"><br><br>
 
-                        <label for= "body"></label><br>
+                        <label for="body"></label><br>
                             <textarea id="comments" name= "comments" placeholder="Write Your Message Here"></textarea> <br><br>
                         
                         <input type="submit" value="Send" id="submit">
@@ -133,6 +137,7 @@
                     <img class="main-logo" src="images/icons/new_logo_colour.svg" alt="footer logo">
                 </article>
                 <nav id="footer-nav">
+                    <h2 class="hidden">Footer Nav</h2>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Archive</a></li>
