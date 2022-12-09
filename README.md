@@ -27,7 +27,7 @@ Lightning Cosplay (FIP For Dan Singer)
 12/3/22- Updated assets like wireframe, created the final high res images  
 12/4/22- Created and styled the final lightboxes, cleaned up the wireframe (and added lightboxes to it)  
 12/5/22- Finalized the project by organizing everything and cleaning up the code, revamped the design and wireframe slightly, updated the file sizes of images, added sitemap and wireframe to assets as they were believed to be needed, organized everything in the folders to hand in  
-12/09/22- Changed the readme formatting with special permission thanks to Professor van Rhys  
+12/09/22- Changed the readme formatting with (what I thought was) special permission thanks to Professor van Rhys (turns out there was miscommunication but since this branch got merged before things got cleared up, I have to make note)
 
 ## Credits
 
